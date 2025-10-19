@@ -5,7 +5,8 @@ export function Hero() {
     <section
       aria-labelledby="hero-heading"
       id="about"
-      className="relative overflow-hidden"
+      className="relative overflow-visible pb-0 mb-0"
+      style={{ marginBottom: "-50px" }}
     >
       {/* container — dilebarkan biar nama muat satu baris */}
       <div className="mx-auto w-full max-w-[1360px] px-6 md:px-10 mr-7">
@@ -15,15 +16,15 @@ export function Hero() {
           <div className="w-full md:pr-10 -mt-60">
             {/* row: "Hi! I am" | pill */}
             <div className="grid grid-cols-[auto_max-content] items-end gap-8">
-              <span className="whitespace-nowrap font-aeonik-trial text-[96px] font-bold leading-[105.6px] text-[#A8DADC] tracking-[-0.02em]">
+              <span className="whitespace-nowrap font-aeonik text-[96px] font-bold leading-[105.6px] text-[#A8DADC] tracking-[-0.02em]">
                 Hi! I am
               </span>
 
               {/* Pill + mascot */}
               <div className="relative h-[215px] w-[402px]">
-                <div className="absolute -top-[1px] left-1/2 -translate-x-1/2">
+                <div className="absolute -top-0 left-1/2 -translate-x-1/2">
                   <Image
-                    src="/jet.svg"
+                    src="/jet.webp"
                     alt="Jet mascot"
                     width={137}
                     height={137}
@@ -33,18 +34,16 @@ export function Hero() {
 
                 <div className="absolute bottom-0 left-1/2 w-[386px] -translate-x-1/2">
                   <div className="flex h-[100px] items-center justify-between rounded-[50px] bg-[#98C1D9] px-8">
-                    <span className="font-aeonik-trial text-[48px] font-bold uppercase text-white tracking-[-0.02em] leading-[1]">
+                    <span className="font-aeonik text-[48px] font-bold uppercase text-white tracking-[-0.02em] leading-[1]">
                       Programmer
                     </span>
-                    <div className="flex h-[60px] w-[73px] items-center justify-center overflow-hidden rounded-[20px]">
-                      <Image
+                    <div className="flex h-[60px] w-[73px] items-center justify-center overflow-hidden rounded-[20px] bg-white/10">
+                      <img
                         src="/React.gif"
                         alt="React logo animation"
                         width={73}
                         height={60}
                         className="h-full w-full object-cover"
-                        priority
-                        unoptimized
                       />
                     </div>
                   </div>
@@ -55,12 +54,12 @@ export function Hero() {
             {/* nama besar — JANGAN wrap */}
             <h1
               id="hero-heading"
-              className="mt-4 font-aeonik-trial text-[96px] font-bold leading-[105.6px] tracking-[-0.02em] text-[#F9F9F9] whitespace-nowrap"
+              className="mt-4 font-aeonik text-[96px] font-bold leading-[105.6px] tracking-[-0.02em] text-[#F9F9F9] whitespace-nowrap"
             >
               Jonah Setiawan
             </h1>
 
-            <p className="mt-4 max-w-[520px] text-lg text-white/75">
+            <p className="mt-4 max-w-[650px] text-lg text-white/75 font-unigeo-32 tracking-[0.5px] leading-[30px]">
               Passionate about crafting seamless websites and interfaces. Let's
               create something amazing together!
             </p>
@@ -91,27 +90,26 @@ export function Hero() {
           {/* RIGHT: photo*/}
           <div className="relative w-full max-w-[600px] h-[800px] place-self-end md:place-self-auto -ml-8">
             <Image
-              src="/mojoHero.png"
-              alt="Jonah Setiawan portrait"
+              src="/mojoHero.webp"
+              alt="Jonah Setiawan"
               fill
               sizes="(max-width: 768px) 90vw, 600px"
               priority
               className="object-cover object-top select-none"
-              quality={100}
             />
           </div>
         </div>
       </div>
 
       {/* wave footer */}
-      <div className="w-full absolute bottom-8 left-0 z-10">
+      <div className="w-full absolute bottom-8 left-0 z-10 -mb-1">
         <Image
           src="/wave/waveHero.svg"
           alt=""
           width={1920}
           height={220}
           priority
-          className="h-auto w-full select-none"
+          className="h-auto w-full select-none block"
         />
       </div>
     </section>

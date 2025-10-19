@@ -2,13 +2,16 @@ import Image from "next/image";
 
 export function Navbar() {
   return (
-    <header
-      className="w-full pb-2"
-      style={{
-        background: "linear-gradient(108deg, #0c1f34 0%, #253b5d 100%)",
-      }}
-    >
-      <div className="mx-auto flex w-full max-w-[1206px] items-center justify-between px-6 py-6 md:px-10">
+    <header className="relative w-full pb-1">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 opacity-95"
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(26, 35, 50, 0.95) 0%, rgba(32, 59, 83, 0.88) 55%, rgba(40, 77, 107, 0) 100%)",
+        }}
+      />
+      <div className="relative z-10 mx-auto flex w-full max-w-[1206px] items-center justify-between px-6 py-6 md:px-10">
         <Image
           src="/brand.svg"
           alt="Mojo brand"
@@ -46,7 +49,7 @@ export function Navbar() {
           </ul>
         </nav>
       </div>
-      <div className="mx-auto mt-2 h-px w-full max-w-[1206px] bg-white/80" />
+      <div className="relative z-10 mx-auto mt-2 h-px w-full max-w-[1206px] bg-white/65" />
     </header>
   );
 }

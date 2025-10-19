@@ -30,7 +30,7 @@ Visit [http://localhost:3000](http://localhost:3000) to preview the navigation.
 ## Design Reference
 
 - Brand asset: `public/brand.svg`
-- Gradient: `linear-gradient(108deg, #0c1f34 0%, #253b5d 100%)`
+- Background blend: `radial-gradient(...) + linear-gradient(180deg, #1a2332 → #2d5a7b)` to match the Figma depth.
 - Link typography: title case labels, 0.02em letter-spacing, white text on a high-contrast backdrop.
 - Hero assets: `public/jet.svg`, `public/React.gif`, `public/mojoHero.png`, `public/sosmedIcon/*.svg`, `public/wave/waveHero.svg`
 
