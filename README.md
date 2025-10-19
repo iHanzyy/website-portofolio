@@ -8,6 +8,7 @@ This project recreates the navigation treatment from Jonah Setiawan’s portfoli
 - Accessibility-ready markup with semantic `header`/`nav`, keyboard focus states, and descriptive alt text.
 - Tailwind CSS utility styling for quick iteration on future sections (hero, projects, experience).
 - Custom font stack (Aeonik for body, Unigeo accent weights ready for headings) served from `/public`.
+- Hero section recreated 1:1 from the supplied mockup, including “PROGRAMMER” badge, React animation, character illustration, and wave divider.
 
 ## Tech Stack
 
@@ -31,12 +32,14 @@ Visit [http://localhost:3000](http://localhost:3000) to preview the navigation.
 - Brand asset: `public/brand.svg`
 - Gradient: `linear-gradient(108deg, #0c1f34 0%, #253b5d 100%)`
 - Link typography: title case labels, 0.02em letter-spacing, white text on a high-contrast backdrop.
+- Hero assets: `public/jet.svg`, `public/React.gif`, `public/mojoHero.png`, `public/sosmedIcon/*.svg`, `public/wave/waveHero.svg`
 
 ## Project Structure
 
 - `src/app/layout.js` – shared layout, fonts, and metadata.
-- `src/app/page.js` – assembles the navigation and placeholder sections.
+- `src/app/page.js` – assembles navigation and hero sections.
 - `src/components/Navbar.jsx` – reusable navigation component.
+- `src/components/Hero.jsx` – hero layout mirroring the mockup.
 - `src/app/globals.css` – global Tailwind entry point and CSS variables.
 
 ## Scripts

@@ -17,6 +17,22 @@
 }
 
 @font-face {
+  font-family: "Aeonik TRIAL";
+  src: url("/aeonik-trial/aeoniktrial-regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aeonik TRIAL";
+  src: url("/aeonik-trial/aeoniktrial-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Unigeo 64";
   src: url("/unigeo/Unigeo64-Semibold-trial.ttf") format("truetype");
   font-weight: 600;
@@ -59,4 +75,8 @@ body {
 
 .font-unigeo-32 {
   font-family: "Unigeo 32", "Aeonik", Arial, Helvetica, sans-serif;
+}
+
+.font-aeonik-trial {
+  font-family: "Aeonik TRIAL", "Aeonik", Arial, Helvetica, sans-serif;
 }

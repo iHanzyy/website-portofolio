@@ -3,12 +3,12 @@ import Image from "next/image";
 export function Navbar() {
   return (
     <header
-      className="w-full border-b border-[#dfd5d9]"
+      className="w-full pb-2"
       style={{
         background: "linear-gradient(108deg, #0c1f34 0%, #253b5d 100%)",
       }}
     >
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6 md:px-10">
+      <div className="mx-auto flex w-full max-w-[1206px] items-center justify-between px-6 py-6 md:px-10">
         <Image
           src="/brand.svg"
           alt="Mojo brand"
@@ -46,6 +46,7 @@ export function Navbar() {
           </ul>
         </nav>
       </div>
+      <div className="mx-auto mt-2 h-px w-full max-w-[1206px] bg-white/80" />
     </header>
   );
 }
