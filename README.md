@@ -7,6 +7,7 @@ This project recreates the navigation treatment from Jonah Setiawan’s portfoli
 - Gradient navigation bar modeled on the Figma reference (rocket brand, three-link menu, accent divider).
 - Accessibility-ready markup with semantic `header`/`nav`, keyboard focus states, and descriptive alt text.
 - Tailwind CSS utility styling for quick iteration on future sections (hero, projects, experience).
+- Custom font stack (Aeonik for body, Unigeo accent weights ready for headings) served from `/public`.
 
 ## Tech Stack
 
@@ -34,7 +35,8 @@ Visit [http://localhost:3000](http://localhost:3000) to preview the navigation.
 ## Project Structure
 
 - `src/app/layout.js` – shared layout, fonts, and metadata.
-- `src/app/page.js` – navigation markup and placeholder content area.
+- `src/app/page.js` – assembles the navigation and placeholder sections.
+- `src/components/Navbar.jsx` – reusable navigation component.
 - `src/app/globals.css` – global Tailwind entry point and CSS variables.
 
 ## Scripts
