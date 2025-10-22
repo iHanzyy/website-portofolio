@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { GooeyText } from "@/components/ui/gooey-text-morphing";
 
 export function Hero() {
   return (
@@ -33,19 +35,14 @@ export function Hero() {
                 </div>
 
                 <div className="absolute bottom-0 left-1/2 w-[386px] -translate-x-1/2">
-                  <div className="flex h-[100px] items-center justify-between rounded-[50px] bg-[#98C1D9] px-8">
-                    <span className="font-aeonik text-[48px] font-bold uppercase text-white tracking-[-0.02em] leading-[1]">
-                      Programmer
-                    </span>
-                    <div className="flex h-[60px] w-[73px] items-center justify-center overflow-hidden rounded-[20px] bg-white/10">
-                      <img
-                        src="/React.gif"
-                        alt="React logo animation"
-                        width={73}
-                        height={60}
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
+                  <div className="flex h-[100px] items-center justify-center rounded-[50px] bg-[#98C1D9] px-8">
+                    <GooeyText
+                      texts={["Programmer", "UI / UX"]}
+                      morphTime={1}
+                      cooldownTime={0.25}
+                      textClassName="font-aeonik text-[48px] font-bold uppercase text-white tracking-[-0.02em] leading-[1]"
+                      className="w-full"
+                    />
                   </div>
                 </div>
               </div>
