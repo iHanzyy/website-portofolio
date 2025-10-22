@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section
       aria-labelledby="hero-heading"
-      id="about"
+      id=""
       className="relative overflow-visible pb-0 mb-0"
       style={{ marginBottom: "-50px" }}
     >
@@ -59,7 +59,7 @@ export function Hero() {
               Jonah Setiawan
             </h1>
 
-            <p className="mt-4 max-w-[650px] text-lg text-white/75 font-unigeo-32 tracking-[0.5px] leading-[30px]">
+            <p className="mt-4 max-w-[650px] text-lg text-white/75 font-unigeo-64 tracking-[0.5px] leading-[30px]">
               Passionate about crafting seamless websites and interfaces. Let's
               create something amazing together!
             </p>

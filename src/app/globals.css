@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Aeonik";
   src: url("/aeonik-trial/aeoniktrial-regular.otf") format("opentype");
@@ -42,7 +46,7 @@
 
 @font-face {
   font-family: "Unigeo 32";
-  src: url("/unigeo/Unigeo64-Semibold-trial.ttf") format("truetype");
+  src: url("/unigeo/Unigeo32-Semibold-trial.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
