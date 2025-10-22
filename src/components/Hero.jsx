@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { GooeyText } from "@/components/ui/gooey-text-morphing";
+import { BlurFade } from "@/components/ui/blur-fade";
 
 export function Hero() {
   return (
@@ -18,9 +19,11 @@ export function Hero() {
           <div className="w-full md:pr-10 -mt-60">
             {/* row: "Hi! I am" | pill */}
             <div className="grid grid-cols-[auto_max-content] items-end gap-8">
-              <span className="whitespace-nowrap font-aeonik text-[96px] font-bold leading-[105.6px] text-[#A8DADC] tracking-[-0.02em]">
-                Hi! I am
-              </span>
+              <BlurFade delay={0.25} inView>
+                <span className="whitespace-nowrap font-aeonik text-[96px] font-bold leading-[105.6px] text-[#A8DADC] tracking-[-0.02em]">
+                  Hi! I am
+                </span>
+              </BlurFade>
 
               {/* Pill + mascot */}
               <div className="relative h-[215px] w-[402px]">
@@ -49,17 +52,21 @@ export function Hero() {
             </div>
 
             {/* nama besar — JANGAN wrap */}
-            <h1
-              id="hero-heading"
-              className="mt-4 font-aeonik text-[96px] font-bold leading-[105.6px] tracking-[-0.02em] text-[#F9F9F9] whitespace-nowrap"
-            >
-              Jonah Setiawan
-            </h1>
+            <BlurFade delay={0.25 * 2} inView>
+              <h1
+                id="hero-heading"
+                className="mt-4 font-aeonik text-[96px] font-bold leading-[105.6px] tracking-[-0.02em] text-[#F9F9F9] whitespace-nowrap"
+              >
+                Jonah Setiawan
+              </h1>
+            </BlurFade>
 
-            <p className="mt-4 max-w-[650px] text-lg text-white/75 font-unigeo-64 tracking-[0.5px] leading-[30px]">
-              Passionate about crafting seamless websites and interfaces. Let's
-              create something amazing together!
-            </p>
+            <BlurFade delay={0.25 * 3} inView>
+              <p className="mt-4 max-w-[650px] text-lg text-white/75 font-unigeo-64 tracking-[0.5px] leading-[30px]">
+                Passionate about crafting seamless websites and interfaces.
+                Let's create something amazing together!
+              </p>
+            </BlurFade>
 
             <div className="mt-6 flex items-center gap-6">
               <Image
